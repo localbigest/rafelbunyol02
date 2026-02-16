@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piso en Alquiler</title>
+
+        <!-- Metadatos para SEO -->
+        <meta name="description" content="Piso en alquiler temporal en Rafelbunyol, Valencia. 2 habitaciones, 69m², aire acondicionado, terraza y gastos incluidos por 900€/mes. ¡Sin intermediarios!">
+        <meta name="keywords" content="piso en alquiler, Rafelbunyol, alquiler temporal, alquiler con gastos incluidos, alquiler sin intermediarios, Valencia">
+
+        <!-- Metadatos para redes sociales -->
+        <meta property="og:title" content="Piso en Alquiler Temporal en Rafelbunyol - 900€/mes (gastos incluidos hasta 150€/mes)">
+        <meta property="og:description" content="Piso en Rafelbunyol, Valencia. 2 habitaciones, 69m², aire acondicionado y terraza. Gastos de luz, agua e internet incluidos. ¡Solo 1 mes de fianza!">
+        <meta property="og:image" content="https://localbigest.github.io/rafelbunyol02/images/3.jpg">
+        <meta property="og:url" content="https://localbigest.github.io/rafelbunyol02">
+        <meta property="og:type" content="website">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Piso en Alquiler Temporal</h1>
+        <p>Un hogar acogedor para ti y tu familia</p>
+    </header>
+
+    <div class="container">
+        <h2>Detalles del Piso</h2>
+        <p><strong>Ubicación:</strong> Rafelbunyol, un encantador pueblo a tan solo 20 minutos de Valencia (linea 3 del metro), ubicado en el centro de la población y cerca de todos los servicios esenciales como comercios, colegios, farmacias y el ayuntamiento.</p>
+        <p><strong>Precio:</strong> 900€/mes</p>
+        <p><strong>Gastos:</strong> Incluidos hasta 150€/mes (Luz, Agua, Internet)</p>
+        <p><strong>Descripción:</strong></p>
+        <ul>
+            <li>Habitaciones: 2</li>
+            <li>Baños: 1</li>
+            <li>Superficie: 69m² construidos</li>
+            <li>Planta: 2ª</li>
+            <li>Cocina americana equipada</li>
+            <li>Aire acondicionado</li>
+            <li>Terraza</li>
+            <li>Año de construcción: 1980</li>
+            <li>Agua caliente: eléctrica</li>
+        </ul>
+        <p>Este piso incluye los gastos de agua, luz e internet (hasta 150€/mes) en la renta mensual, lo que garantiza una experiencia de alquiler sin preocupaciones.</p>
+        <p>Posibilidad de empadronamiento. Se requiere solvencia económica debido a verificación de seguros antipagos. No mascotas.</p>
+
+        <p><strong>Contacto:</strong> <a href="mailto:localbigest@gmail.com" style="color:  #4CAF50;">localbigest@gmail.com</a></p>
+
+
+        <h2>Galería de Imágenes</h2>
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <footer>
+        <p>Contacto: <a href="mailto:localbigest@gmail.com" style="color: white;">localbigest@gmail.com</a></p>
+        <p>&copy; 2025 Piso en Alquiler</p>
+    </footer>
+
+    <script>
+        // Cambiar esta ruta por la carpeta donde se almacenan las imágenes
+        const imageFolder = './images/';
+
+        // Nombres de las imágenes generados dinámicamente
+        const images = Array.from({ length: 19 }, (_, i) => `${i + 1}.jpg`);
+
+        const gallery = document.getElementById('gallery');
+
+        images.forEach(image => {
+            const imgElement = document.createElement('img');
+            imgElement.src = `${imageFolder}${image}`;
+            imgElement.alt = 'Foto del piso';
+            gallery.appendChild(imgElement);
+        });
+    </script>
+</body>
+</html>
